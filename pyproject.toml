@@ -1,5 +1,5 @@
 [project]
-name = "qr-code-generator-mcp"
+name = "qrcode-mcp-server"
 version = "1.0.0"
 description = "MCP server for generating QR codes from URLs using FastMCP"
 readme = "README.md"
