@@ -50,5 +50,9 @@ def generate_qr_code(url: str, size: int = 10, border: int = 4) -> str:
     return f"QR code generated successfully for: {url}\n\nBase64 PNG Image:\n{img_base64}\n\nTo view, save this as a .png file or use in HTML: <img src=\"data:image/png;base64,{img_base64}\" />"
 
 
+def main():
+    """Main entry point for the MCP server."""
+    mcp.run()
+    
 if __name__ == "__main__":
     mcp.run()
