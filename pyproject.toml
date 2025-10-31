@@ -11,3 +11,6 @@ dependencies = [
 
 [project.scripts]
 qrcode-mcp-server = "server:main"
+
+[tool.setuptools]
+py-modules = ["server"]
