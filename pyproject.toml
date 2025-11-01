@@ -12,3 +12,9 @@ dependencies = [
 [project.scripts]
 qrcode-mcp-server = "server:main"
 
+[tool.setuptools]
+py-modules = ["server"]
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
