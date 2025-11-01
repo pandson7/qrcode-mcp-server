@@ -14,7 +14,6 @@ from fastmcp import FastMCP
 # Create FastMCP server
 mcp = FastMCP("qrcode-mcp-server",instructions="QR Code Generator MCP Server")
 
-
 @mcp.tool()
 def generate_qr_code(url: str, size: int = 10, border: int = 4) -> str:
     """
@@ -53,6 +52,6 @@ def generate_qr_code(url: str, size: int = 10, border: int = 4) -> str:
 def main():
     """Main entry point for the MCP server."""
     mcp.run()
-    
+
 if __name__ == "__main__":
     mcp.run()
